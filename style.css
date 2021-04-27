@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url(fondo.png) ;
+}
+header{
+    color: white;
+}
+h1{
+    padding: 10px 35px;
+}
+.menu{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    padding: 0px 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    list-style: none;
+}
+.grilla li{
+    padding: 50px;
+    margin: 20px;
+}
+.grilla a{
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 45px;
+    color: greenyellow;
+    text-decoration: none;
+}
+.grilla a:hover{
+    border: 2px solid green;
+    background:black;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="password" id="password">
+    <button onclick="disablePassword();">Mostrar contraseña</button>
+    <p>Tu contraseña es: <span id="contraseña"></span></p>
+    <script>
+        function disablePassword(){
+            let inputPassword = document.getElementById("password");
+            let inputcontraseña = inputPassword.value;
+            let spancontraseña = document.getElementById("contraseña");
+            let spanMostrarContraseña = spancontraseña.value;
+            spancontraseña.textContent = inputcontraseña;
+        }
+    </script>
+</body>
+</html>
